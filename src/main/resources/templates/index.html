@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<form action="/login" method="post" th:object="${user}">
+    Enter name: <input type ="text" name ="name" th:field="*{name}"><br>
+    Enter password: <input type ="text" name ="pass" th:field="*{password}"><br>
+    <input type = "submit" value="login"><br>
+
+    New in? Please, <a href="register">register!</a>
+</form>
+
+</body>
+</html>

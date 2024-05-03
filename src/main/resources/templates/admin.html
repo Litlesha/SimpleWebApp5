@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlms="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+</head>
+<body>
+<table>
+    <thead>
+    <caption><b>Teachers</b></caption>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Surname</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="teachers : ${teachers}">
+        <td th:text="${teachers.id}"></td>
+        <td th:text="${teachers.name}"></td>
+        <td th:text="${teachers.surname}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

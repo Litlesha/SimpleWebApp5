@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+<body>
+<form action="/register" method="post" th:object="${user}">
+    Enter name: <input type = "text" name ="name" th:field="*{name}"> <br>
+    Enter password: <input type = "text" name ="pass" th:field="*{password}"> <br>
+    Enter email: <input type = "text" name = "email" th:filed = "*{email}"><br>
+    <input type ="submit" value="register">
+</form>
+</body>
+</html>

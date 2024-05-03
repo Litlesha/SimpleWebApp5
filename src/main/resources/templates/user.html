@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>user</title>
+</head>
+<body>
+<table>
+    <caption><b>Departments</b></caption>
+    <thead>
+    <th>Id</th>
+    <th>Username</th>
+    </thead>
+    <tbody>
+    <tr th:each="departments : ${departments}">
+        <td th:text="${departments.id}"></td>
+        <td th:text="${departments.name}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
